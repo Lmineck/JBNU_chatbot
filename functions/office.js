@@ -12,7 +12,7 @@ const office = function (rtm, text, channel, offices) {
       for (let i = 0; i < officeN.length; i++) {
         if (officeN[i].toLowerCase().replace(/ /g, '') === text.toLowerCase().replace(/ /g, '')) {
           tmp = i;
-          rtm.sendMessage(`${text} 은(는) ${officelist[officeN[i]]}에 위치합니다.`, channel);
+          rtm.sendMessage(`🏫학과 사무실 안내🏫\n${text} 은(는) ${officelist[officeN[i]]}에 위치합니다.`, channel);
           suc = 1;
         }
       }
@@ -24,16 +24,16 @@ const office = function (rtm, text, channel, offices) {
           distance[i] = levenshtein(officeN[i].toLowerCase().replace(/ /g, ''), text.toLowerCase().replace(/ /g, ''));
           if (distance[min] > distance[i]) min = i;
         }
-        rtm.sendMessage(`${officeN[min]} 은(는) ${officelist[officeN[min]]}에 위치합니다.`, channel);
+        rtm.sendMessage(`🏫학과 사무실 안내🏫\n${officeN[min]} 은(는) ${officelist[officeN[min]]}에 위치합니다.`, channel);
       }
+      return 0;
     } else {
       console.log('학과 사무실 안내합니다');
-      rtm.sendMessage('학과 이름을 입력해주세요 (예, Architectural Engineering ) :', channel);
+      rtm.sendMessage('🏫학과 사무실 안내🏫\n학과 이름을 입력해주세요 (예, Architectural Engineering ) :', channel);
+      return 4;
     }
-    return Promise.resolve('success');
   } catch (error) {
     console.log('error!', error.data);
-    return Promise.resolve('error');
   }
 };
 module.exports = office;
