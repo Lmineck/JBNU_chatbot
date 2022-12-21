@@ -1,4 +1,4 @@
-<img width="5%" src="https://user-images.githubusercontent.com/88527089/208947485-b0ac1f13-225f-4494-82f2-10a248ae2734.png"/># JBNU CHAT BOT
+<img width="5%" src="https://user-images.githubusercontent.com/88527089/208947485-b0ac1f13-225f-4494-82f2-10a248ae2734.png"/> # JBNU CHAT BOT
 [JBNU] 2022_OSS_Project
 
 ## Developer
