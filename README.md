@@ -3,12 +3,14 @@
 ## 🛠 Tech Stacks 🛠
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"> <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"> <img src="https://img.shields.io/badge/json-000000?style=for-the-badge&logo=json&logoColor=white"> <img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=visual studio code&logoColor=white"> <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
 
-## 👩‍💻 Developer 👩‍💻
+
+## 👨‍💼 Developer 👨‍💼
 이름 | 작업
 --- | --- |
 **이민혁** | Develop, 외부발표
 **정혜원** | Develop, 통합테스팅
 **김은비** | Develop, 코드리뷰
+
 
 ## 💻 프로그램 기능 및 사용법 💻
 
