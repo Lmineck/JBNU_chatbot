@@ -23,6 +23,5 @@ jobs:
       run: |
         npm install mocha -g
         npm install
-        mocha index.spec.js
       env:
         CI: true
