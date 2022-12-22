@@ -1,7 +1,7 @@
 <img width="50%" src="https://user-images.githubusercontent.com/88527089/208949390-22b33566-2c9e-4170-a522-122c67427a68.png"/>
 
 ## 🛠 Tech Stacks 🛠
-<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"> <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"> <img src="https://img.shields.io/badge/json-000000?style=for-the-badge&logo=json&logoColor=white"> <img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=visual studio code&logoColor=white"> <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/> <img src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"/> <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/json-000000?style=for-the-badge&logo=json&logoColor=white"/> <img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=visual studio code&logoColor=white"/> <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
 
 ## 👨‍💼 Developer 👨‍💼
 NAME | WORK
@@ -14,42 +14,84 @@ NAME | WORK
 
 ### ✔ Preview
 
-#### ▪ 인사
-챗봇에게 대화를 시도하면 간략한 인사와 
-#### ▪ 학사일정
+> #### ◼ 인사
+>> 챗봇에게 대화를 시도하면 인사와 기능을 간략하게 소개합니다
 
-#### ▪ 오늘 학식
+> #### ◼ 학사일정
+>> 정규화된 형식에 맞게 날짜를 입력하면 해당 날짜에 맞는 학사일정을 안내합니다
 
-#### ▪ 이번주 학식
+> #### ◼ 오늘 학식
+>> 당일 전북대학교 진수원의 중식 메뉴를 안내합니다
 
-#### ▪ 학과 사무실 안내
+> #### ◼ 이번주 학식
+>> 주간 전북대학교 진수원의 중식 메뉴를 안내합니다
 
-#### 의존성 설치
-- `$ npm install —save js-levenshtein`  ([gustf/js-levenshtein](https://github.com/gustf/js-levenshtein))
-- `$ npm install axios`
-- `$ npm install cheerio`
-#### 개발 순서
-- develop branch 에서 자신의 원격 repo로 fork
-- 서버에 위에 적힌 의존성 설치
-- 필요 기능 개발 후 develop branch에 PR
-- 다른 Contributor의 코드 리뷰를 받은 후 merge
-- integration test 통과 후 Maintainer의 판단 하에 main branch로 release
+> #### ◼ 학과 사무실 안내
+>> 학과명을 입력하면 해당 학과 사무실의 위치를 안내합니다  
+>> 오타와 대소문자 처리를 지원합니다
 
-### 일반 사용자
-#### 1. 학사일정 안내
-- user가 '학사일정'을 입력시,
-- '안내 받을 날짜를 이야기해주세요' 출력 후 user가 날짜를 입력하면, 'ex) 10/15'
-- 그 날짜의 학사일정을 출력 'ex) 10/15 은(는) 개교기념일 입니다'
+### ✔ Files
+> #### ◼ index.js
+>> main 코드입니다  
+>> 개발한 기능들을 이 코드에 import하여 관리, 실행합니다
 
-#### 2. 학과사무실 안내
-- user가 '학과사무실', '학과 사무실', '과사' 중 하나를 입력시,
-- '학과이름을 입력해주세요' 출력 후 user가 학과를 입력하면, 'ex) Architectural Engineering'
-- 그 학과의 학과사무실 위치를 출력 'ex) Architectural Engineering 은(는)College of Engineering Building 1, 132입니다'
+> #### ◼ greeting.js
+>> 첫 인사를 안내하는 코드입니다  
+>> 사용자가 필요로 하는 기능을 입력할 수 있도록 안내 메세지를 출력합니다
 
-#### 3. 오늘의 식단 안내
-- user가 '오늘 밥 뭐야'를 입력시 오늘의 진수원식단을 크롤링하여 출력.
-- 미리 정의된 기준으로 1~3점중 평점을 매겨서 출력.
-- user가 '이번주 뭐나와'를 입력시 이번주의 진수원 식단을 전부 크롤링하여 출력.
+> #### ◼ haksa.js
+>> 학사 일정을 안내하는 코드입니다  
+>> 학사 일정을 안내받기 위한 사용자의 첫 입력 시, 날짜를 요구하는 메세지를 출력합니다  
+>> 사용자가 날짜를 입력한 두번째 입력 시, 해당 날짜를 haksaP.json에 매칭하여 학사 일정을 출력합니다
 
-#### 4. 인사
-- user가 'hi' 입력시 'Hello!', 'Hello, I am chatbot!', '안녕하세요 저는 챗봇입니다!' 중 하나 랜덤으로 출력
+> #### ◼ menu.js  
+>> 당일 전북대학교 진수원 중식 메뉴를 안내하는 코드입니다  
+>> 진수원 홈페이지의 주간 식단을 스크랩 해온 뒤, 출력합니다
+
+> #### ◼ menus.js  
+>> 주간 전북대학교 진수원 중식 메뉴를 안내하는 코드입니다  
+>> 진수원 홈페이지의 주간 식단을 스크랩 해온 뒤, 출력합니다
+
+> #### ◼ office.js
+>> 학과 사무실 위치를 안내하는 코드입니다  
+>> 학과 사무실 위치를 안내받기 위한 사용자의 첫 입력 시, 학과 이름을 요구하는 메세지를 출력합니다  
+>> 사용자가 학과 이름을 입력한 두번째 입력 시, 해당 이름을 officeP.json에 매칭하여 학사 일정을 출력합니다  
+>> 대소문자의 처리와, Levenshtein Distance 알고리즘을 이용한 오타 처리가 구현되어 있습니다
+
+### ✔ Usage
+
+> ◼ Install Node in your server  
+> ◼ Install npm module in your server  
+> ◼ Write 'slack-bot token' on 'token' file  
+> ◼ Run your server with command ("node index.js")  
+
+## ⚙ Test Environment ⚙
+#### OS : Windows, MacOS
+#### IDE : Visual Studio Code
+#### Language : JavaScript
+#### CheckTool : ESLint, Husky, Mocha
+#### Collaboration Tools : Git , GitHub, Slack
+
+
+## 📃 Lisence 📃
+~~~
+Copyright (c) 2022 Minhyeok Lee
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+~~~
