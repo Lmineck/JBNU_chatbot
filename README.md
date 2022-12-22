@@ -13,6 +13,17 @@ NAME | WORK
 ## 💻 Introduce Program 💻
 
 ### ✔ Preview
+
+#### ▪ 인사
+챗봇에게 대화를 시도하면 간략한 인사와 
+#### ▪ 학사일정
+
+#### ▪ 오늘 학식
+
+#### ▪ 이번주 학식
+
+#### ▪ 학과 사무실 안내
+
 #### 의존성 설치
 - `$ npm install —save js-levenshtein`  ([gustf/js-levenshtein](https://github.com/gustf/js-levenshtein))
 - `$ npm install axios`
