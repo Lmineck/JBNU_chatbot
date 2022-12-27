@@ -1,4 +1,5 @@
-<img width="50%" src="https://user-images.githubusercontent.com/88527089/208949390-22b33566-2c9e-4170-a522-122c67427a68.png"/>
+<img width="50%" src="https://user-images.githubusercontent.com/88527089/208949390-22b33566-2c9e-4170-a522-122c67427a68.png"/>  
+전북대학교 학생들의 편의를 위한 slack 챗봇입니다
 
 ## 🛠 Tech Stacks 🛠
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/> <img src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"/> <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/json-000000?style=for-the-badge&logo=json&logoColor=white"/> <img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=visual studio code&logoColor=white"/> <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
