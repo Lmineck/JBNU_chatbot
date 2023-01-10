@@ -68,7 +68,7 @@ NAME | WORK
 
 #### OS : Windows, MacOS
 #### IDE : Visual Studio Code
-#### SERVER : Naver Cloud Platform
+#### Server : Naver Cloud Platform
 #### Language : JavaScript
 #### CheckTool : ESLint, Husky, Mocha
 #### Collaboration Tools : Git , GitHub, Slack
